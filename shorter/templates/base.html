@@ -1,0 +1,70 @@
+        <!DOCTYPE html >
+
+        <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <title> {{ title }} </title>
+                <link rel="icon"   	    href="https://cdn.dribbble.com/users/4011/screenshots/408773/scissors.png"/>
+            <!-- Bootstrap -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        </head>
+        <style>
+            .bg-light { background-color: #34612691 !important;}
+            .nav-link.active,
+            .navbar-light .navbar-nav .nav-link,
+            .navbar-light .navbar-brand{
+            color: #FFF !important;
+            font-size: 1.3em;
+            color: #FFF;
+            font-weight: bolder;}
+
+           .nav-link.active:hover,
+           .navbar-light .navbar-nav .nav-link:hover,
+           .navbar-light .navbar-brand:hover{ color: #d6ff00 !important;}
+
+           .itms{margin-left: 70%;    }
+
+           footer{
+               background-color: #34612691;
+                font-size: 1.5em;
+                padding-top: 39px;
+                font-style: italic;}
+           a:hover{
+               color: #28a745;
+             text-decoration: none;
+            }
+
+        </style>
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="/">Cut</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav itms ">
+                  <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="/about/">about US</a>
+                </div>
+              </div>
+            </nav>
+            {% block body %}
+
+            {% endblock %}
+
+            <footer>
+              <div class="container text-center">
+                 <div > Copyright  <a href="https://www.upwork.com/fl/frontendwebdeveloper" target="_blank
+                      "><span> Abdalrhman </span></a> &copy; 2018
+                       </div><br><br>
+              </div>
+                </div>
+            </footer>
+            <!--js scripts-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        </body>
+        </html>

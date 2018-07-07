@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block body %}
+                <style>
+                    body{ background-color: #0c5460; color: #f8f9fa;}
+                    .bodypage{padding-top: 128px; }
+                    .bodypage a{font-size:1.4em;
+                   padding: 5px;
+                    }
+                    .btn:not(:disabled):not(.disabled) {
+                    cursor: pointer;
+                    margin-top: 40px;
+                    margin-left: 86px;
+                    }
+                </style>
+                <div class="container bodypage" style="min-height: 450px;">
+                    <div class=" row  justify-content-md-center " >
+                             <div class="col-md-auto ">
+                                     <h4>this link already shortened by US </h4> <br>
+                                     <span>full link :</span>
+                                    <a href="{{ object.url }}"> {{ object.url }}</a> <br>
+                                    <p>clicks on this link = {{ object.clickevent.count  }}</p>
+                                    <span>short link :</span>
+                                    <a href="{{ object.get_short_url}}" target="_blank"> {{object.get_short_url }}</a><br>
+                                   <button type="button" class="btn btn-warning text-center"><a href='/'> make  New one </a></button>
+                             </div>
+                    </div>
+                </div>
+
+{% endblock %}
